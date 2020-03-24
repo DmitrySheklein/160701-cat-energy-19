@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Щеклеин](https://up.htmlacademy.ru/adaptive/19/user/160701).
-* Наставник: `Неизвестно`.
+* Наставник: `[Без наставника]`.
 
 ---
 
