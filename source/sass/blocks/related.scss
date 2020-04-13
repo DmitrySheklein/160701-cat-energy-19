@@ -1,0 +1,11 @@
+.related__wrapper {
+  padding:  0 20px;
+}
+.related__title {
+  @include text(24px,24px);
+  font-family: $font-title;
+  font-weight: 400;
+}
+.related__list {
+  @include list-clear();
+}

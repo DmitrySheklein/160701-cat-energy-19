@@ -1,0 +1,23 @@
+.property-list {
+  position: relative;
+  @include list-clear();
+}
+
+.property-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.property-list__icon-wrap {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color: $green;
+}
+
+.property-list__content {
+  @include text(14px,18px);
+  color: $text;
+}

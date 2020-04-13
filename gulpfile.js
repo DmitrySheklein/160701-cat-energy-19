@@ -7,11 +7,13 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var sassGlob = require('gulp-sass-glob');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
+    .pipe(sassGlob())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
@@ -27,7 +29,8 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    port: 3005
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));

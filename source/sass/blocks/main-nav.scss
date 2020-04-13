@@ -1,0 +1,14 @@
+.main-nav {
+  position: relative;
+}
+.main-nav__wrapper {
+  display: none;
+  position: absolute;
+}
+.main-nav__toggle {
+  @include btn-clear;
+
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+}
