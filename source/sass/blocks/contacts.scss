@@ -1,0 +1,16 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  background: $white;
+}
+.contacts__description {
+  @include text(16px, 20px);
+  margin: 0;
+  font-family: $font-title;
+  text-transform: uppercase;
+}
+.contacts__address {
+  @include text (14px, 20px);
+  color: $text;
+  margin: 0;
+}

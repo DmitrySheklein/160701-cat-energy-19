@@ -1,0 +1,24 @@
+@mixin list-clear {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link-clear {
+  text-decoration: none;
+}
+@mixin btn-clear {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+@mixin pseudo($display: block, $content: "") {
+  content: $content;
+  display: $display;
+}
+
+@mixin text($font-size: 14px, $line-height: 18px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}

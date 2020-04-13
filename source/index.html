@@ -3,22 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/150x50" alt="" >
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="" >
+          <nav class="page-header__nav main-nav">
+            <button class="main-nav__toggle" type="button">
+              <img class="main-nav__toggle-icon" src="img/icon-mobile-menu.svg" alt="">
+              Открыть меню
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+                <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог продукции</a></li>
+                <li class="site-list__item"><a href="form.html" class="site-list__link">Подбор программы</a></li>
+              </ul>
+            </div>
+          </nav>
       </div>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html" class="site-list__link">Подбор программы</a></li>
-          </ul>
-        </div>
-      </nav>
     </header>
 
     <main class="page-main">
@@ -27,13 +31,11 @@
           <div class="main-slide__header">
             <h1 class="main-slide__title">Функциональное питание для котов</h1>
             <p class="main-slide__subtitle">Занялся собой? Займись котом!</p>
-            <img class="main-slide__image" src="https://via.placeholder.com/150x150" alt="Функциональное питание для котов" >
-            <a href="" class="button main-slide__button">
-              Подобрать программу
-            </a>
+            <img class="main-slide__image" src="img/index-can-mobile@1x.png" alt="Функциональное питание для котов" >
+            <a href="" class="button main-slide__button">Подобрать программу</a>
           </div>
-          <div class="programs">
-            <div class="programs__item category-item">
+          <div class="main-slide__programs">
+            <div class="main-slide__programs-item category-item">
               <div class="category-item__header">
                 <img class="category-item__icon" src="https://via.placeholder.com/50x50" alt="" >
                 <h2 class="category-item__title">Похудение</h2>
@@ -43,7 +45,7 @@
               </p>
               <a href="#" class="category-item__link">Каталог slim</a>
             </div>
-            <div class="programs__item category-item">
+            <div class="main-slide__programs-item category-item">
               <div class="category-item__header">
                 <img class="category-item__icon" src="https://via.placeholder.com/50x50" alt="" >
                 <h2 class="category-item__title">Набор массы</h2>
@@ -96,7 +98,7 @@
             </div>
           </div>
           <div class="example__total-cost">Затраты на питание: 15 000 руб.</div>
-          <img class="example__image" src="https://via.placeholder.com/150x150" alt="" >
+          <img class="example__image" src="img/before-mobile@1x.png" alt="" >
           <div class="example__progress status-bar">
             <button class="status-bar__button status-bar__button--left">Было</button>
             <div class="status-bar__line"></div>
@@ -113,13 +115,13 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
-      <div class="contacts">
+      <div class="map">
         <!-- <iframe class="contacts__map" src=""></iframe> -->
-        <img class="contacts__map-image" src="https://via.placeholder.com/750x50" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" >
+        <img class="map__image" src="https://via.placeholder.com/750x50" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" >
       </div>
       <div class="page-footer__bottom">
         <div class="page-footer__logo">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x50" alt="" >
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="" >
         </div>
         <ul class="page-footer__social social">
           <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><span>Вконтакте</span></a></li>

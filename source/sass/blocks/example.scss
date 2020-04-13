@@ -1,0 +1,59 @@
+.example {
+  background: $bg-grey;
+}
+.example__wrapper {
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+.example__text {
+  @include text();
+  color: $text;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
+.example__item {
+  display: flex;
+  position: relative;
+  width: 125px;
+  min-height: 55px;
+  margin-bottom: 40px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &-title {
+    margin: auto;
+    @include text(24px,24px);
+    text-transform: uppercase;
+    font-family: $font-title;
+  }
+  &-subtitle {
+    width: 90px;
+    padding: 0 15px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -6px;
+    transform: translateX(-50%);
+    background: $bg-grey;
+    @include text(12px,12px);
+    text-align: center;
+  }
+}
+
+.example__total-cost {
+  @include text(14px,20px);
+  font-family: $font-title;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.example__image {
+  margin-bottom: 35px;
+}
+
